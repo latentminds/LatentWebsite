@@ -4,3 +4,6 @@
 [submodule "site-web-insa"]
 	path = site-web-insa
 	url = https://gitlab.com/RubenGres/site-web-insa.git
+[submodule "Tankatak"]
+	path = Tankatak
+	url = https://github.com/RubenGres/Tankatak.git
