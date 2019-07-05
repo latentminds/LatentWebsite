@@ -1,0 +1,51 @@
+
+* {
+    margin : 0;
+    padding: 0;
+}
+
+a {    
+    color: inherit;
+    text-decoration: none;
+}
+
+.projects {
+    margin: 10px 0 0 0;
+    padding: 20px 0 20px 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item.perso {
+    background: linear-gradient(70deg, #769ff8, 50%, #0045db);
+}
+
+.item.cours {
+    background: linear-gradient(70deg, #f87676, 50%, #db0000);
+}   
+
+.item {
+    background: linear-gradient(70deg, #769ff8, 50%, #0045db);
+    color: white;
+    font-weight: bold;
+
+    text-align: center;
+    line-height:110px;
+    font-size: 20px;
+    width:110px;
+    height:110px;
+
+    border-radius: 10px;
+
+    padding: 15px;
+
+    display:inline-block;
+    vertical-align: middle;
+}
+
+.item:hover {
+    transform: rotate(5deg);
+    
+}
