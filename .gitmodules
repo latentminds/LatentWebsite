@@ -3,4 +3,4 @@
 	url = https://github.com/RubenGres/FlockingSandbox
 [submodule "site-web-insa"]
 	path = site-web-insa
-	url = http://gitlab.com/RubenGres/site-web-insa
+	url = https://gitlab.com/RubenGres/site-web-insa
