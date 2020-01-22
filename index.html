@@ -26,6 +26,14 @@
         dt { font-style: italic; font-weight: bold; font-size: 18px; text-align: right; padding: 0 26px 0 0; width: 150px; float: left; height: 100px; border-right: 1px solid #999;  }
         dd { width: 600px; float: right; }
         dd.clear { float: none; margin: 0; height: 15px; }
+
+        .crop {width: 300px; height: 200px; overflow: hidden; margin:10px; box-shadow: 10px 5px 5px darkgrey;}
+        .crop img {max-width: 100%; width:100%; height: 100%; transition: all 500ms ease-in-out;}
+        .crop img:hover {transform: scale(1.2,1.2);}
+        #my-projects {
+           display: flex; flex-wrap: wrap;
+            align-content: space-between; justify-content: space-evenly; align-content: space-around;
+        }
      </style>
 </head>
 
@@ -121,8 +129,20 @@
         </dl>
         
         <div class="clear"></div>
+
+        <hr>
+        </br>
+
+        <h2>Some of my projects : </h2>
     
-    </div>
+        <div id="my-projects">
+            <div class="crop"> <a href="https://github.com/RubenGres/Blastoff"> <img src="images/blastoff.png" alt="Blastoff java game" id="proj_pic" /> </a> </div>
+            <div class="crop"> <a href="FlockingSandbox/index.html"> <img src="images/boidsJS.png" alt="Boids simulation" id="proj_pic" /> </a> </div>
+            <div class="crop"> <a href="https://github.com/RubenGres/Messaging-INSA"> <img src="images/messaging.png" alt="Messaging app" id="proj_pic" /> </a> </div>
+            <div class="crop"> <a href="site-web-insa/index.html"> <img src="images/siteINSA.png" alt="Website" id="proj_pic" /> </a> </div>
+        </div>
+
+    </div>        
 
 </body>
 
