@@ -7,3 +7,6 @@
 [submodule "Tankatak"]
 	path = Tankatak
 	url = https://github.com/RubenGres/Tankatak.git
+[submodule "TvShowRatings"]
+	path = TvShowRatings
+	url = https://github.com/RubenGres/TvShowRatings
