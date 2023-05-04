@@ -186,6 +186,10 @@ h1, h2, h3, h4, h5, h6 {
 
 /* service item */
 
+a {
+    color: inherit;
+}
+
 .service_item {
     padding: 60px 30px;
     text-align: center;
@@ -218,11 +222,11 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s
+    transition: all 0.4s ease 0s;
 }
 
 .service_item:hover {
-    background: #5f30ff
+    background: #5f30ff;
 }
 
 .service_item:hover h4, .service_item:hover p, .service_item:hover .primary_btn2 {
