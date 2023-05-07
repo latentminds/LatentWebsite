@@ -29,7 +29,12 @@ body {
     color: #797979
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Roboto", sans-serif;
     color: #05364d;
 }
@@ -87,10 +92,11 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: 2px;
     font-weight: 500;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 25px;
 }
 
+/*
 .main_title p.top_text span {
     position: relative;
     top: -2px;
@@ -98,10 +104,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-left: 5px;
     width: 80px;
     height: 4px;
-    background: -webkit-linear-gradient(90deg, #456df3 0%, #e66cb8 100%);
-    background: -moz-linear-gradient(90deg, #456df3 0%, #e66cb8 100%);
-    background: -o-linear-gradient(90deg, #456df3 0%, #e66cb8 100%);
-    background: linear-gradient(90deg, #456df3 0%, #e66cb8 100%);
+    background: linear-gradient(90deg, #456df3 0%, #e66cb8 50%, #ffffff 100%);
     filter: blur(1px);
     -o-filter: blur(1px);
     -ms-filter: blur(1px);
@@ -109,6 +112,7 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-filter: blur(1px);
     border-radius: 5px
 }
+*/
 
 /* projects */
 
@@ -143,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
     padding-top: 250px;
     padding-bottom: 200px;
 
-    background: url(../img/banner/home-banner.png) no-repeat top center;
+    background: url(../img/banner/home-banner4.png) no-repeat top center;
     background-position: center;
     background-size: cover;
 }
@@ -188,21 +192,42 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
     color: inherit;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.tilt1 {
+    transform: rotate(-3deg);
+}
+
+.tilt2 {
+    transform: rotate(0deg);
+}
+
+.tilt3 {
+    transform: rotate(3deg);
 }
 
 .service_item {
     padding: 60px 30px;
-    text-align: center;
-    background: #f8faff;
+    background: #e3ebff;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
     margin-bottom: 30px;
+    text-decoration: none;
+    border-radius: 2%;
 }
 
 .service_item img {
-    margin-bottom: 45px
+    margin-bottom: 20px;
+    border-radius: 10%;
 }
 
 .service_item h4 {
@@ -218,18 +243,51 @@ a {
 }
 
 .service_item p {
-    margin-bottom: 30px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
     transition: all 0.4s ease 0s;
 }
 
-.service_item:hover {
-    background: #5f30ff;
+.tilt1:hover {
+    transform: translateY(-20px) rotate(-3deg);
 }
 
-.service_item:hover h4, .service_item:hover p, .service_item:hover .primary_btn2 {
+.tilt2:hover {
+    transform: translateY(-20px) rotate(0deg);
+}
+
+.tilt3:hover {
+    transform: translateY(-20px) rotate(3deg);
+}
+
+.color1 {
+    border: 4px solid hwb(222 38% 0%);
+}
+
+.color2 {
+    border: 4px solid hsl(261, 100%, 69%);
+}
+
+.color3 {
+    border: 4px solid hsl(298, 100%, 69%);
+}
+
+.color1:hover {
+    background: hsl(222, 100%, 69%);
+}
+
+.color2:hover {
+    background: hsl(261, 100%, 69%);
+}
+
+.color3:hover {
+    background: hsl(298, 100%, 69%);
+}
+
+.service_item:hover h4,
+.service_item:hover p,
+.service_item:hover .primary_btn2 {
     color: #ffffff
 }
 
@@ -251,21 +309,103 @@ a {
 }
 
 .primary_btn2:before {
-	content: '';
-	position: absolute;
-	left: 0px;
-	bottom: -2px;
-	width: 50px;
-	height: 2px;
-	-webkit-transition: all 0.4s ease 0s;
-	-moz-transition: all 0.4s ease 0s;
-	-o-transition: all 0.4s ease 0s;
-	transition: all 0.4s ease 0s
+    content: '';
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+    width: 50px;
+    height: 2px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s
 }
 
-.gradient-bg, .primary_btn2:before, .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link, .footer_area .footer_social a:hover {
+.gradient-bg,
+.primary_btn2:before,
+.navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link,
+.footer_area .footer_social a:hover {
     background: -webkit-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
     background: -moz-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
     background: -o-linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
     background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%)
+}
+
+/* Taem member */
+
+.team_member {
+    padding: 60px 30px;
+    margin-bottom: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.team_member img {
+    margin-bottom: 20px;
+    border-radius: 100%;
+    transition: all 5s ease 0s;
+
+}
+
+.team_member img:hover {
+    transform: rotate(360deg);
+    transition: all 5s ease 0s;
+}
+
+.team_member p {
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
+/* Other projects*/
+
+.other_project {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 3%;
+    margin-top: 35px;
+}
+
+.other_project img {
+    transition: transform 0.5s ease;
+}
+
+.other_project:hover img {
+    transform: scale(1.08);
+}
+
+.other_project .op_label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 10px;
+    background-color: rgba(0, 0, 0, 0.9); 
+
+    color: #fff;
+    transition: transform 0.5s ease;
+    transform: translateY(100%);
+
+}
+
+.other_project .op_label p {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.other_project:hover .op_label {
+    transform: translateY(0);
+}
+
+.other_project .op_label h3 {
+    position: absolute;
+    top: -40px;
+    height: 40px;
+    font-size: 20px;
+    width: 100%;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.9);
+    padding-left: 20px;
+    padding-top: 10px;
 }
