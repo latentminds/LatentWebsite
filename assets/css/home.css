@@ -87,7 +87,7 @@ h6 {
     padding-right: 20px;
 }
 
-.main_title p.top_text {
+.main_title h1.top_text {
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -207,6 +207,7 @@ a:hover {
 
 .tilt2 {
     transform: rotate(0deg);
+    padding-bottom: 200px;
 }
 
 .tilt3 {
