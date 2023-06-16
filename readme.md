@@ -1,3 +1,3 @@
-# rubengres.github.io
+# koll.ai
 
-This my personal website where you can find my resume and some of my projects.
+The landing page and blog for https://koll.ai
